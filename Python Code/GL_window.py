@@ -1,7 +1,11 @@
+'''
+By Muhammad Umar Anzar
+'''
+
 from PyQt5.QtOpenGL import QGLWidget
 from PyQt5.QtOpenGL import QGLFormat
 
-import OpenGL
+#import OpenGL
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *

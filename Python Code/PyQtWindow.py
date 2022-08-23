@@ -1,3 +1,7 @@
+'''
+By Muhammad Umar Anzar
+'''
+
 import PyQt5.QtCore as QtCore
 from PyQt5 import QtWidgets
 from GL_window import GLWidget
@@ -22,7 +26,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.Btn_draw.clicked.connect(self.animation)
 
     def windowSetting(self) -> None:
-        self.setWindowTitle("B19102104 Muhammad Umar Anzar")
+        self.setWindowTitle("WINDOW TITLE")
         self.resize(800,600)
         self.center()
 
