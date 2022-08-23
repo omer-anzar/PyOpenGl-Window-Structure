@@ -6,7 +6,7 @@
 > - Subject Computer Graphics
 
 ## Description
-Window Structure of PyQt5 to run PyOpenGL for educational purposes.
+GUI Window Structure of PyQt5 to run PyOpenGL for educational purposes.
 
 ## Dependencies
 - PyQt5
