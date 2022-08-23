@@ -48,10 +48,10 @@ That's All Folks.
 <hr>
 
 ### Step 4 (If the above steps don't work )
-If the above steps don't work, then just install python 3.7 and download all of the PyOpenGL packages from my repository Pacakge folder including freeglut.dll and do the steps from 1 to 3.
+If the above steps don't work, then just install python 3.7 and download all of the PyOpenGL packages from my repository `Packages folder` including freeglut.dll and do the steps from 1 to 3.
 Lastly, place the `freeglut.dll` file in your Windows folder. Usually, it is located in the `C drive` i.e, 
 ```
 C:\Windows
 ```
-
+NOTE:- Download the win32 `.whl` file if you're using the 32-bit operating system
 
