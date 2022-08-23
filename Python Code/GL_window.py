@@ -71,16 +71,18 @@ class GLWidget(QGLWidget):
         '''
         
 
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT) #refresh screen : clear color array buffer
-        
-        glPointSize(5.0) #The glPointSize function specifies the diameter of rasterized points
-        
+
 
 
         '''
         Example Code
         of X AND Y AXIS
         '''
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT) #refresh screen : clear color array buffer
+        
+        glPointSize(5.0) #The glPointSize function specifies the diameter of rasterized points
+        
+        
         glBegin(GL_LINES)
 
         #glColor3f can be called in between glBegin and glEnd. When it is used this way, it can be used to give each vertex its own color.

@@ -56,4 +56,6 @@ C:\Windows
 NOTE:- Download the win32 `.whl` file if you're using the 32-bit operating system
 
 ## How to run
-In `Python Code` Folder, there are two files, PyQtWindow which is considered the main file which will open the program.
+In `Python Code Folder`, there are two files, `PyQtWindow` which is considered the main file which runs and opens the program.
+
+The other file, `GL_window` includes a class `GLWidget` that is inheriting the PyQt OpenGL widget and whatever You want to draw and animate, you need to write implementation in the `paintGL` function of the `GLWidget` class.
