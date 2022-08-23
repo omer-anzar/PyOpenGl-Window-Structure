@@ -36,7 +36,7 @@ class GLWidget(QGLWidget):
 
 
         '''
-        Background color, values b/w 0-1 i.e why I divided RGB by 255
+        Background color, values b/w 0-1 that is why I divided RGB by 255
         '''
         self.r, self.g, self.b, self.a = 10, 50, 10, 1
         # initialize the screen to blueCalls glClearColor (in RGBA mode) 
