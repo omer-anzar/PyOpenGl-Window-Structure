@@ -21,8 +21,7 @@ pip install PyQt5
 ```
 
 ### Step 2
-To install **PyOpenGL** you need to be careful of the python `version` you are using and your system architecture i.e `32` or `64` because PyOpengGL version should match the version of python you are using.
-
+To install **PyOpenGL** you need to be careful of the python `version` you are using and your system architecture i.e `32` or `64` because the PyOpengGL version should match the version of python you are using.
 
 First download PyOpenGL and PyOpenGL_accelerate wheel files that are available in the link mentioned below:
 
@@ -45,9 +44,14 @@ pip install PyOpenGL_accelerate-3.1.3b2-cp37-cp37m-win_amd64.whl
 ```
 Again be careful of the version of python and PyOpenGL you are using and install the packages with the correct name of your PyOpenGl version.
 
-### Step 4
-Lastly, you need download and place `freeglut.dll` file in your Windows folder, usually, it is located in `C drive` i.e, 
+That's All Folks.
+<hr>
+
+### Step 4 (If the above steps don't work )
+If the above steps don't work, then just install python 3.7 and download all of the PyOpenGL packages from my repository Pacakge folder including freeglut.dll and do the steps from 1 to 3.
+Lastly, place the `freeglut.dll` file in your Windows folder. Usually, it is located in the `C drive` i.e, 
 ```
 C:\Windows
 ```
+
 
