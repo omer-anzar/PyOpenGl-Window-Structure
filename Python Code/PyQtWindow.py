@@ -59,13 +59,17 @@ class MainWindow(QtWidgets.QMainWindow):
     def animation(self):
         #Function That uses Qtimer multiThreading to Animated The OpenGl Widget
         if self.animate:
+            print("Animation ON")
             self.timer.timeout.connect(self.GL_window.update) #Updating OpenGl Widget
 
             #Starts or restarts the timer with a timeout interval of msec milliseconds. Like setting FPS
             self.timer.start(20)
             self.animate = False
+        
 
     def closeEvent(self, event): # WHEN window is closed Automatically Qtimer is stopped.
+        if not self.animate:
+            print("Animation OFF")
         self.animate = True
         self.timer.stop()
 

@@ -22,7 +22,6 @@ class GLWidget(QGLWidget):
         # YOUR GLOBAL ATTRIBUTES HERE IN CONSTURCTOR
         # self.abc
         # self.xyz
-        self.i = 0 #Attribute for example code
 
 
     def formatGL(self):
@@ -107,14 +106,7 @@ class GLWidget(QGLWidget):
         glEnd()
         glFlush() #The glFlush function forces execution of OpenGL functions in finite time.
         
-        glBegin(GL_POINTS)
-        glVertex2f(self.i,0.5)
-        glEnd()
-        glFlush()
-        self.i += 0.01
-        if self.i > 1:
-            self.i = -1
-        
+
         
 
         
