@@ -33,7 +33,8 @@ For Example, if you are using **python version 3.7** then you need to download t
 - PyOpenGL‑3.1.6‑cp37‑cp37m‑win_amd64.whl
 
 Where cp37 is the identification of py version 3.7.
-Similarly, cp39 is the identifying py version 3.9.
+
+Similarly, cp39 is identifying the py version 3.9.
 If you have a 32-bit Operating system then download win_32 files.
 
 ### Step 3
