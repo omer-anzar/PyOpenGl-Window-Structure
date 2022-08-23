@@ -57,10 +57,12 @@ C:\Windows
 ```
 NOTE:- Download the PyOpenGL win32 `.whl` file if you're using the 32-bit operating system.
 
-## How to run
+## How to Run and Edit
 In `Python Code Folder`, there are two files, `PyQtWindow` which is considered the main file which runs and opens the program.
 
 The other file, `GL_window` includes a class `GLWidget` that is inheriting the PyQt OpenGL widget and whatever You want to draw and animate, you need to write implementation in the `paintGL` function of the `GLWidget` class.
+
+Background Color and other initialization functions of OpengGL can be edited and added in the `initializeGL` function of the `GLWidget` class.
 
 ## QTimer To Update GL widget
 I have to use the Qtimer of PyQt to animate the widget. In other words, updating the widget by a delay timer. 
