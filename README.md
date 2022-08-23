@@ -55,3 +55,5 @@ C:\Windows
 ```
 NOTE:- Download the win32 `.whl` file if you're using the 32-bit operating system
 
+## How to run
+In `Python Code` Folder, there are two files, PyQtWindow which is considered the main file which will open the program.
