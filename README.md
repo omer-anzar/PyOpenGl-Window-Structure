@@ -15,7 +15,7 @@ Window Structure of PyQt5 to run PyOpenGL for educational purposes.
 
 **To install these libraries Follow the steps mentioned below:**
 ### Step 1
-> On the command prompt, type this to install **PyQt5**
+On the command prompt, type this to install **PyQt5**
 ```
 pip install PyQt5
 ```
