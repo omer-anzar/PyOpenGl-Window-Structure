@@ -4,15 +4,17 @@ By Muhammad Umar Anzar
 
 import PyQt5.QtCore as QtCore
 from PyQt5 import QtWidgets
-from GL_window import GLWidget
-import sys
+from PyQt5.QtOpenGL import QGLWidget
+
 
 class MainWindow(QtWidgets.QMainWindow):
 
-    def __init__(self) -> QtWidgets.QMainWindow:
+    def __init__(self, GL_window : QGLWidget) -> QtWidgets.QMainWindow:
         super().__init__()
+        
         self.windowSetting()
-
+        
+        self.GL_window = GL_window
         self.windowObject()
         self.GL_window.show()
         self.setCentralWidget(self.central_widget)
@@ -44,7 +46,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def windowObject(self) -> None:
        
         self.central_widget = QtWidgets.QWidget(self)
-        self.GL_window = GLWidget(self.central_widget)
+        self.GL_window = self.GL_window(self.central_widget)
         self.Btn_clear = QtWidgets.QPushButton("Animation Off",self.central_widget)
         self.Btn_draw = QtWidgets.QPushButton("Animation ON",self.central_widget)
 
@@ -73,10 +75,5 @@ class MainWindow(QtWidgets.QMainWindow):
         self.animate = True
         self.timer.stop()
 
-if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv)
-    window = MainWindow()
-    window.show()
-    sys.exit(app.exec_())
     
 

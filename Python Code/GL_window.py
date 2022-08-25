@@ -1,7 +1,7 @@
 '''
 By Muhammad Umar Anzar
 '''
-
+from PyQt5 import QtWidgets
 from PyQt5.QtOpenGL import QGLWidget
 from PyQt5.QtOpenGL import QGLFormat
 
@@ -9,6 +9,11 @@ from PyQt5.QtOpenGL import QGLFormat
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
+
+#Import PyQtWindow
+from PyQtWindow import MainWindow
+import sys
+
 
 
 class GLWidget(QGLWidget):
@@ -108,7 +113,11 @@ class GLWidget(QGLWidget):
         
 
         
-
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+    window = MainWindow(GLWidget)
+    window.show()
+    sys.exit(app.exec_())
         
     
 
