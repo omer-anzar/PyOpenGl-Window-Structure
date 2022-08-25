@@ -74,6 +74,3 @@ class MainWindow(QtWidgets.QMainWindow):
             print("Animation OFF")
         self.animate = True
         self.timer.stop()
-
-    
-
