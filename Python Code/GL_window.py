@@ -11,7 +11,7 @@ from OpenGL.GLUT import *
 from OpenGL.GLU import *
 
 #Import PyQtWindow
-from PyQtWindow import MainWindow
+import PyQtWindow
 import sys
 
 
@@ -115,6 +115,6 @@ class GLWidget(QGLWidget):
         
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
-    window = MainWindow(GLWidget)
+    window = PyQtWindow.MainWindow()
     window.show()
     sys.exit(app.exec_())
