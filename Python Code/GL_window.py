@@ -27,6 +27,7 @@ class GLWidget(QGLWidget):
         # YOUR GLOBAL ATTRIBUTES HERE IN CONSTURCTOR
         # self.abc
         # self.xyz
+        self.i = 0 #EXAMPLE MOVING POINT
 
 
     def formatGL(self):
@@ -103,14 +104,34 @@ class GLWidget(QGLWidget):
 
         glVertex2f(1.0, 0)
         
-
         # Y-AXIS
         glColor3f(0.0, 1.0, 0.0) #green
         glVertex2f(0, -1.0)
         glVertex2f(0, 1.0)
         glEnd()
         glFlush() #The glFlush function forces execution of OpenGL functions in finite time.
-        
+
+
+
+        ##EXAMPLE MOVING POINT
+        glBegin(GL_POINTS)
+        glVertex2f(0.5+self.i,0.5+self.i)
+        glEnd()
+        glFlush()
+
+
+    def animate(self):
+        #Any global variable You want to change to create an animation or put rotations to your Object
+        #Add here
+        #.
+        #.
+        self.i += 0.001 #EXAMPLE MOVING POINT
+
+
+        #Dont change this
+        self.updateGL()
+        #Use updateGL() instead of update(), this does not make difference in my code here, but updateGL calls paintGL in the documentation.
+
 
         
 if __name__ == '__main__':

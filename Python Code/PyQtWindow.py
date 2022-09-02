@@ -62,8 +62,8 @@ class MainWindow(QtWidgets.QMainWindow):
         #Function That uses Qtimer multiThreading to Animated The OpenGl Widget
         if self.animate:
             print("Animation ON")
-            self.timer.timeout.connect(self.GL_window.update) #Updating OpenGl Widget
-
+            self.timer.timeout.connect(self.GL_window.animate) #Updating OpenGl Widget
+            
             #Starts or restarts the timer with a timeout interval of msec milliseconds. Like setting FPS
             self.timer.start(20)
             self.animate = False
