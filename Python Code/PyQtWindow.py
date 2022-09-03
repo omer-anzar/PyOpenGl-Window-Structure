@@ -74,3 +74,4 @@ class MainWindow(QtWidgets.QMainWindow):
             print("Animation OFF")
         self.animate = True
         self.timer.stop()
+        self.timer = QtCore.QTimer() #Re initialize so that it won't get ++ start()
