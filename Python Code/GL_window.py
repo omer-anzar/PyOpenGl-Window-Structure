@@ -24,11 +24,6 @@ class GLWidget(QGLWidget):
         self.setMouseTracking(False)
         #self.glInit() I think not working
 
-        # YOUR GLOBAL ATTRIBUTES HERE IN CONSTURCTOR
-        # self.abc
-        # self.xyz
-        self.i = 0 #EXAMPLE MOVING POINT
-
 
     def formatGL(self):
         fmt = QGLFormat()
@@ -38,23 +33,23 @@ class GLWidget(QGLWidget):
 
     def initializeGL(self):
         self.once = True
-
-
         '''
         Background color, values b/w 0-1 that is why I divided RGB by 255
         '''
         self.r, self.g, self.b, self.a = 10, 50, 10, 1
         # initialize the screen to blueCalls glClearColor (in RGBA mode) 
         glClearColor(self.r/255, self.g/255, self.b/255, self.a/255)  
+        
         #Alternate self.qglClearColor(QColor(r, g, b, a)) 
-
-
         gluOrtho2D(-1.0, 1.0,-1.0,1.0)# Specify the max coordinates -x,+x,-y,+y.
-
-
 
         #glut.glutInitDisplayMode(glut.GLUT_DOUBLE | glut.GLUT_RGBA) I think its not working
         self.formatGL()
+
+        # YOUR GLOBAL ATTRIBUTES HERE IN initializeGL Function
+        # self.abc
+        # self.xyz
+        self.i = 0 #EXAMPLE MOVING POINT
         
     
     def resizeGL(self, width, height):
